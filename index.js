@@ -69,7 +69,7 @@ io.on("connection", (socket) => {
 });
 
 app.route("/check").get((req, res) => {
-  return res.json("Your App is working fine");
+  return res.json("Your App is working fine 2");
 });
 
 // Add new endpoint to handle text messages

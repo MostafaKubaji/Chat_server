@@ -6,7 +6,7 @@ const routes = require("./routes");
 const winston = require('winston');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = 5000 ||process.env.PORT ;
 const server = http.createServer(app);
 const io = socketIo(server);
 
@@ -85,7 +85,7 @@ app.route("/sendmessage").post((req, res) => {
   }
 });
 
-server.listen(port, "0.0.0.0", () => {
+server.listen(port, () => {
   logger.info(`Server started on port ${port}`);
 });
 

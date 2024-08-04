@@ -4,7 +4,6 @@ const socketIo = require("socket.io");
 const cors = require("cors");
 const routes = require("./routes");
 const winston = require('winston');
-//asdasda
 
 const app = express();
 const port = process.env.PORT || 5000;
